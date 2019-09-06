@@ -24,7 +24,7 @@ def gradingStudents(grades):
             rounded_grade = round(grade/5)*5 #grade greater than 37 being rounded 
             if grade < rounded_grade and rounded_grade - grade < 3:
                 final_grades.append(rounded_grade) #checks difference between grade and rounded_grade when rounded_grade is greater than grade
-            elif grade > rounded_grade and grade - rounded_grade < 3:
+            elif grade > rounded_grade:
                 final_grades.append(grade) #checks difference between grade and rounded_grade when grade is greater than rounded_grade
             else:
                 final_grades.append(rounded_grade) #appends to final array
