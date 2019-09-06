@@ -215,8 +215,22 @@ def timeConversion(s):
 
 #16
 
-x = "bijaya"
-print(x[1:-2])
+# Complete the queensAttack function below.
+def queensAttack(n, k, r_q, c_q, obstacles):
+    row_attacks, column_attacks, diagonal_attacks = 0, 0, 0 #possible of attacks
+    #row attacks (columns left/right of queen)
+    for i in range(1, n+1):
+        
+        for j in range(len(obstacles)):
+            
+            if i != c_q and obstacles[j][0] != r_q:            
+            
+                row_attacks += 1
+                print(i, row_attacks)
+    return row_attacks, column_attacks, diagonal_attacks
+print(queensAttack(8, 2, 1, 3, [[2,2], [5,5]]))
+                    
+    
 
 #17
 
