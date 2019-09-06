@@ -190,7 +190,33 @@ def birthdayCakeCandles(ar):
 
 #15
 
+
+#
+# Complete the timeConversion function below.
+#
+def timeConversion(s):
+    #
+    # Write your code here.
+    #
+    military_time = ''
+
+    if s[-2] == 'A':
+        if s[0:2] == '12':
+            military_time = '00' + s[2:-2]
+        else:
+            military_time = s[0:-2]
+    else:
+        if s[0:2] == 12:
+            military_time = str(int(s[0:2])) + s[2:-2]
+        else:
+            military_time = str((int(s[0:2]) + 12)%24) + s[2:-2]
+    return military_time
+print(timeConversion("12:34:04PM"))
+
 #16
+
+x = "bijaya"
+print(x[1:-2])
 
 #17
 
