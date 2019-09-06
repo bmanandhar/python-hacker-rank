@@ -200,18 +200,18 @@ def timeConversion(s):
     #
     military_time = ''
 
-    if s[-2] == 'A':
-        if s[0:2] == '12':
-            military_time = '00' + s[2:-2]
+    if s[-2] == 'A': #checks if AM or not
+        if s[0:2] == '12': #checks if it's midnight hour
+            military_time = '00' + s[2:-2] #converts midnight hour to '00' hr, deletes string 'PM'
         else:
-            military_time = s[0:-2]
+            military_time = s[0:-2] #converts all other AM hrs to military 24 hour time format
     else:
-        if s[0:2] == 12:
-            military_time = str(int(s[0:2])) + s[2:-2]
+        if s[0:2] != '12': #converts non-noon PM hrs to military 24 hr time format
+            military_time = str((int(s[0:2]) + 12)%24) + s[2:-2] #deletes string 'PM'
+
         else:
-            military_time = str((int(s[0:2]) + 12)%24) + s[2:-2]
+            military_time = str(int(s[0:2])) + s[2:-2] #keeps noon hr as 12, deletes string 'PM'
     return military_time
-print(timeConversion("12:34:04PM"))
 
 #16
 
