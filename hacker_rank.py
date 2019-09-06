@@ -259,6 +259,9 @@ def gradingStudents(grades):
     return final_grades 
  
 print(gradingStudents([73, 67, 38, 33]) == [75, 67, 40, 33]) #True
+                    
+    
+
 
 #18
 
