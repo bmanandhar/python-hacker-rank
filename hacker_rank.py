@@ -175,7 +175,18 @@ def miniMaxSum(arr):
         sum_arr.append(sum)
         sum = 0
     print(min(sum_arr), max(sum_arr))
+
 #14
+    
+# Complete the birthdayCakeCandles function below.
+def birthdayCakeCandles(ar):
+    tallest_candle_height = max(ar)
+    total_tallest_candles = 0
+    for candle_height in ar: 
+        if candle_height == tallest_candle_height:
+            total_tallest_candles += 1
+    return total_tallest_candles
+    
 
 #15
 
