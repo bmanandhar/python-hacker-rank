@@ -449,7 +449,7 @@ def kangaroo(x1, v1, x2, v2):
 
     #max distance kangaroos can go is 10000
     for i in range(10000):
-        if x1 == x2:
+        if x1 + v1 == x2 + v2:
             return 'YES'
         x1 += v1
         x2 += v2
