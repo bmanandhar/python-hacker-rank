@@ -328,23 +328,56 @@ Only the second orange falls within the region between  and , so we print  as ou
 
 # Complete the countApplesAndOranges function below.
 def countApplesAndOranges(s, t, a, b, apples, oranges):
-    total_apples, total_oranges = 0, 0
-    apples_at_distance = []
-    oranges_at_distance = []
-
+    
+    #counters for apples and oranges
+    total_apples, total_oranges = 0, 0 
+    
+    #array of distances apples fell on the ground
+    apples_at_distance = [] 
+    
+    #array of distances oranges fell on the ground
+    oranges_at_distance = [] 
+    
+    #calculating distances from home for fallen apples
     for m in apples:
         apples_at_distance.append(m + a)
+        
+    #calculating distances from home for fallen oranges
     for n in oranges:
         oranges_at_distance.append(n + b)
-
+        
+    #checking if apples are within home limits
     for i in apples_at_distance:
         if i >= s and i <= t: total_apples += 1
+        
+    #checking if oranges are within home limits
     for j in oranges_at_distance:
         if j >= s and j <= t: total_oranges += 1
+        
     print(total_apples)
     print(total_oranges)
-        
+if __name__ == '__main__':
+    st = input().split()
 
+    s = int(st[0])
+
+    t = int(st[1])
+
+    ab = input().split()
+
+    a = int(ab[0])
+
+    b = int(ab[1])
+
+    mn = input().split()
+
+    m = int(mn[0])
+
+    n = int(mn[1])
+
+    apples = list(map(int, input().rstrip().split()))
+    
+        
 
 
 #19
