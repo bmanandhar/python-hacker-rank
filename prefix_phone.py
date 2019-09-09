@@ -29,7 +29,7 @@ def prefix_phone(prefixes, numbers):
         for number in numbers:
             
             #search for prefix in number
-            if prefix == number[0:len(prefix)]:
+            if prefix == number[:len(prefix)]:
                 
                 #adds number to array if matches
                 selected.append(number)
@@ -50,3 +50,4 @@ print(prefix_phone(prefixes, numbers) == expected) # True
 
 
 #End of file
+
