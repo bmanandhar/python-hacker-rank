@@ -481,5 +481,13 @@ if __name__ == '__main__':
 
 #20    
 
+x = "america"
 
+y = "united states of america"
 
+print(x[-7:])
+print(x[-7:])
+
+    
+    
+    
