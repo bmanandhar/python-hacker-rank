@@ -18,15 +18,20 @@ Given:
 
 #prefixes and numbers both are lists(array)
 def prefix_phone(prefixes, numbers):
-    
+
+    #empty array for result    
     selected = []
     
+    #iterates thru prefix list
     for prefix in prefixes:
-        
+
+        #checks number to match prefix
         for number in numbers:
             
+            #search for prefix in number
             if prefix == number[0:len(prefix)]:
                 
+                #adds number to array if matches
                 selected.append(number)
     
     return selected
