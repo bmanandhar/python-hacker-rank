@@ -15,7 +15,7 @@ Given:
 -A list of phone numbers
 -Select the prefix phones and form a list as result     
 """
-
+print(prefix_phone(prefixes, numbers) == expected) # True
 #prefixes and numbers both are lists(array)
 def prefix_phone(prefixes, numbers):
 
