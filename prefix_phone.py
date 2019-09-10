@@ -15,7 +15,7 @@ Given:
 -A list of phone numbers
 -Select the prefix phones and form a list as result     
 """
-print(prefix_phone(prefixes, numbers) == expected) # True
+
 #prefixes and numbers both are lists(array)
 def prefix_phone(prefixes, numbers):
 
@@ -36,7 +36,7 @@ def prefix_phone(prefixes, numbers):
     
     return selected
     
-prefixes = ['+1234', '+5678', '+3215', '+987' ]
+prefixes = ['+1234', '+5678', '+3215', '+987']
 
 numbers = ['+9872349871', '+9871234665432', '+8712345671', 
            '+32159865342', '45452677721', '+5678111222333', 
