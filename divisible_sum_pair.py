@@ -62,7 +62,7 @@ import sys
 # Complete the divisibleSumPairs function below.
 def divisibleSumPairs(n, k, ar):
     
-    #collects sum of pairs
+    #collects number of pairs
     res = 0;
     
     #iterates thru the length - 1
