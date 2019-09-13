@@ -61,12 +61,22 @@ import sys
 
 # Complete the divisibleSumPairs function below.
 def divisibleSumPairs(n, k, ar):
+    
+    #collects sum of pairs
     res = 0;
+    
+    #iterates thru the length - 1
     for i in range(n-1):
+        
+        #iterates from i+1 to length, searches for the pairs 
         for j in range(i+1, n):
+            
+            #when sum equals k
             if (ar[i] + ar[j]) % k == 0:
+                
+                #adds 1 to res
                 res += 1
-                print(i, j)
+            
     return res
 
 
