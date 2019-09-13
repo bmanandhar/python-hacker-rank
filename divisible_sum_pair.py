@@ -5,7 +5,8 @@ Created on Thu Sep 12 22:32:30 2019
 
 @author: bijayamanandhar
 """
-
+#Github repo: 
+#https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
 
 """
 
@@ -73,5 +74,6 @@ def divisibleSumPairs(n, k, ar):
 n = 5
 k = 3
 ar = [1,2,3,4,1,3,0]
-print(divisibleSumPairs(n, k, ar) == 3) # True ([ar[0], ar[]])
+print(divisibleSumPairs(n, k, ar) == 3) 
+# True ([ar[0]+ar[1]] = 3)([ar[1]+ar[3] = 3)/([ar[1]+ar[14] = 3)
 
