@@ -85,6 +85,6 @@ n = 5
 k = 3
 ar = [1,2,3,4,1,3,0]
 print(divisibleSumPairs(n, k, ar) == 3) 
-# True ([ar[0]+ar[1]] = 3)([ar[1]+ar[3] = 3)/([ar[1]+ar[4] = 3)
+# True ([ar[0]+ar[1]] = 3)\\//([ar[1]+ar[3] = 3)\\//([ar[1]+ar[4] = 3)
 
 
