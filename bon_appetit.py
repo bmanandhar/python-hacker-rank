@@ -70,6 +70,11 @@ import sys
 # Complete the bonAppetit function below.
 def bonAppetit(bill, k, b):
 
+    # Here:
+    # 'bill' is an array of all elements, 
+    # 'k' is the index of array Anna rejects
+    # 'b' is the amount Anna pays
+    
     # Total amount
     fair_bill = 0
     
