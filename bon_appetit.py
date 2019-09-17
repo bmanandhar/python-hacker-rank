@@ -66,6 +66,7 @@ import random
 import re
 import sys
 
+########################################
 # Complete the bonAppetit function below.
 def bonAppetit(bill, k, b):
 
@@ -85,6 +86,7 @@ def bonAppetit(bill, k, b):
     else:
         print(int(b - fair_bill))
 
+########################################
 
 if __name__ == '__main__':
     nk = input().rstrip().split()
