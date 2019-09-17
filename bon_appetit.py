@@ -85,11 +85,6 @@ def bonAppetit(bill, k, b):
     else:
         print(int(b - fair_bill))
 
-        
-    #Checking if bill is fairly split
-    
-     
-
 
 if __name__ == '__main__':
     nk = input().rstrip().split()
