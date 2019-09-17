@@ -87,7 +87,7 @@ def bonAppetit(bill, k, b):
     if fair_bill == b:
         print ('Bon Appetit')
         
-    #Otherwise, over-chraged aamount
+    #Otherwise, over-chraged amount
     else:
         print(int(b - fair_bill))
 
