@@ -68,13 +68,33 @@ import sys
 
 def repeatedString(s, n):
     
+    # number of full strings to make the length equal to n
+    number_of_strings = n//len(s)
     
-
+    # extra length that does not cover the full length os s
+    remainder = n % len(s)
     
+    # count1, number of 'a' in the length divisible by n
+    # count2, number of 'a' in the remainder length
+    count1, count2 = 0, 0 
     
+    # counting a
+    for i in range(len(s)):
+        
+        # number of a in the original string
+        if s[i] == 'a':
+            count1 += 1
+            
+        # number of a in the extra length
+        if s[i] == 'a' and i < remainder:
+            count2 += 1
+            
+    return count1 * number_of_strings + count2
     
-    
+        
 #Program ends here    
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
