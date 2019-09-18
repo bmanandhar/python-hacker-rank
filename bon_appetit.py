@@ -72,7 +72,7 @@ def bonAppetit(bill, k, b):
 
     # Here:
     # 'bill' is an array of all elements, 
-    # 'k' is the index of array Anna rejects
+    # 'k' is the index of element Anna rejects
     # 'b' is the amount Anna pays
     
     # Total amount
@@ -80,7 +80,7 @@ def bonAppetit(bill, k, b):
     
     #Calculation
     for i in range(len(bill)):
-        if bill[i] != bill[k]:
+        if i != k:
             fair_bill += bill[i]/2
 
     #When Anna is charged fairly
