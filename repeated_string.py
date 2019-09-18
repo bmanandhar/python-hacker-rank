@@ -71,7 +71,7 @@ def repeatedString(s, n):
     # number of full strings to make the length equal to n
     number_of_strings = n//len(s)
     
-    # extra length that does not cover the full length os s
+    # extra length that does not cover the full length of s
     remainder = n % len(s)
     
     # count1, number of 'a' in the length divisible by n
