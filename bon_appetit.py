@@ -107,4 +107,3 @@ if __name__ == '__main__':
     bonAppetit(bill, k, b)
 
 
-10//100
