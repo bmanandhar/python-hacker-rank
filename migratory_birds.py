@@ -86,7 +86,7 @@ def migratoryBirds(arr):
     for key in bird_dic:
         
         #sets condition for updating result
-        if bird_dic[key] > freq or (result > key and bird_dic[key] == freq): 
+        if bird_dic[key] > freq or (bird_dic[key] == freq and result > bird_dic[key]): 
             
             result = key
             
