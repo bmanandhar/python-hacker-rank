@@ -94,7 +94,7 @@ def migratoryBirds(arr):
     
     return result 
 
-print(migratoryBirds([1,1,3,3,4,4,4,5,5,5]) == 4) #should print 'True'
+print(migratoryBirds([1,3,5,3,4,1,4,4,5,5]) == 4) #should print 'True'
 
 
 
