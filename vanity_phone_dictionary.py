@@ -28,7 +28,7 @@ Key-pad has alpha characters as:
 def match_vanity_phone(codes, numbers):
     
     #dictionary of alpha-chars corresponding to key-numbers
-    dic = {'2':'ABC', '3':'DEF', '4':'GHI', '5':'JKL', 
+    code_dic = {'2':'ABC', '3':'DEF', '4':'GHI', '5':'JKL', 
            '6':'MNO', '7':'PQRS', '8':'TUV', '9':'WXYZ'}
     
     #array to collect number converted from code
@@ -47,10 +47,10 @@ def match_vanity_phone(codes, numbers):
         for i in range(len(code)):
             
             #tracks corresponding number matched with alpha-character
-            for key in dic:
+            for key in code_dic:
                 
                 #matching each character to get corresponding number
-                if code[i] in dic[key]:
+                if code[i] in code_dic[key]:
                     
                     #forming corresponding number to match alpha-code
                     temp += key
