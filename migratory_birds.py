@@ -77,24 +77,26 @@ def migratoryBirds(arr):
     freq = 0
 
     #
-    for i in range(len(arr)):
+    for i in range(1, 6):
 
         #forms a dictionary with key-value pairs for types of birds and occurences
-        dic[arr[i]] = arr.count(arr[i])
+        dic[i] = arr.count(i)
+        
+    print(dic)
 
     #checking occurences with respect to types of birds
     for key in dic:
         
         #sets condition for updating result
-        if result == '' or dic[key] > freq or (result > key and dic[key] == freq): 
+        if dic[key] > freq or (result > key and dic[key] == freq): 
             
             result = key
             
             freq = dic[key] 
     
     return result 
-    
 
+print(migratoryBirds([1,1,3,3,4,4,4,5,5,5]) == 4) #should print 'True'
 
 
 
