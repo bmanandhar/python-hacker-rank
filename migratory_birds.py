@@ -68,7 +68,7 @@ Two types have a frequency of , and the lower of those is type .
 def migratoryBirds(arr):
     
     #create a dictionary for types of birds as key and total of that type as value (property)
-    dic = {}
+    bird_dic = {}
 
     #creates a variable for result
     result = ''
@@ -80,19 +80,17 @@ def migratoryBirds(arr):
     for i in range(1, 6):
 
         #forms a dictionary with key-value pairs for types of birds and occurences
-        dic[i] = arr.count(i)
-        
-    print(dic)
+        bird_dic[i] = arr.count(i)
 
     #checking occurences with respect to types of birds
-    for key in dic:
+    for key in bird_dic:
         
         #sets condition for updating result
-        if dic[key] > freq or (result > key and dic[key] == freq): 
+        if bird_dic[key] > freq or (result > key and bird_dic[key] == freq): 
             
             result = key
             
-            freq = dic[key] 
+            freq = bird_dic[key] 
     
     return result 
 
