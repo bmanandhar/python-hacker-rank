@@ -20,8 +20,7 @@ Key-pad has alpha characters as:
 def match_vanity_phone(codes, numbers):
     
     #numbers and corresponding code-characters
-    num_code = ['2=ABC', '3=DEF', '4=GHI', '5=JKL',
-                '6=MNO', '7=PQRS', '8=TUV', '9=WXYZ']
+    num_code = ['2=ABC', '3=DEF', '4=GHI', '5=JKL', '6=MNO', '7=PQRS', '8=TUV', '9=WXYZ']
         
     #array to collect number converted from code
     code_to_num_arr = []
