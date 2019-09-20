@@ -84,8 +84,3 @@ print(match_vanity_phone(alpha_codes, telephone_numbers) == expected) #True
 #End of file
 
 
-
-x = 'abcd'
-
-for i in x:
-    print(i)
