@@ -72,7 +72,9 @@ Since 1800 is leap year. Day lies on 12 September.
 # Complete the dayOfProgrammer function below.
 def dayOfProgrammer(year):
 
-    #Results for different cnditions 
+    #There are three different cases 
+    #
+    #Results for different cases 
     regular_year = '13'+'.'+'09'+'.'+str(year)
     leap_year = '12'+'.'+'09'+'.'+str(year)
     exceptional_year = '26'+'.'+'09'+'.'+str(year)
@@ -95,3 +97,5 @@ def dayOfProgrammer(year):
             return regular_year
 
 print(dayOfProgrammer(1938))
+
+
