@@ -45,12 +45,14 @@ When we perform  left rotations, the array undergoes the following sequence of c
 """
 def rotLeft(a, d):
 
-    #Moving the elements to its left
+    #Moving d number of elements to its left
+    #It's the same as moving the remaining elements to its right
+    #Slice the array into left and right portions 
+    #Concatenate in reverse order
        
     return a[d:len(a)] + a[:d]
     
-    
-print(rotLeft([1,2,3,4,5], 4) == [5, 1, 2, 3, 4]) #Should print 'True'
+print(rotLeft([1,2,3,4,5], 4) == [5, 1, 2, 3, 4]) #Prints 'True'
     
     
     
