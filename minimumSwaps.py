@@ -43,15 +43,21 @@ Output Format
 Return the minimum number of swaps to sort the given array."""
 
 class Solution:
+    
     def minimumSwaps(self, arr):
+        
         arr = [i-1 for i in arr]
+        
         swap = i = 0
+        
         while i < len(arr):
             if arr[i] == i:
                 i += 1
                 continue
             arr[arr[i]], arr[i] = arr[i], arr[arr[i]]
+            
             swap += 1
+            
         return swap
 
 if __name__=='__main__':
