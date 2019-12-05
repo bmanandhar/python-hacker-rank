@@ -10,13 +10,15 @@ Created on Thu Sep 12 22:32:30 2019
 
 """
 
-You are given an array of  integers, , and a positive integer, . Find and print the number of  pairs where  and  +  is divisible by .
+You are given an array of  integers, and a positive integer.
+Find and print the number of  pairs where  and  +  is divisible by .
 
 For example,  and . Our three pairs meeting the criteria are  and .
 
 Function Description
 
-Complete the divisibleSumPairs function in the editor below. It should return the integer count of pairs meeting the criteria.
+Complete the divisibleSumPairs function in the editor below. 
+It should return the integer count of pairs meeting the criteria.
 
 divisibleSumPairs has the following parameter(s):
 
@@ -63,7 +65,7 @@ import sys
 def divisibleSumPairs(n, k, ar):
     
     #collects number of pairs
-    res = 0;
+    res = 0
     
     #iterates thru the length - 1
     for i in range(n-1):
