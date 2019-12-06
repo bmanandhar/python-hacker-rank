@@ -83,3 +83,4 @@ def arrayManipulation(n, queries):
     return max(num)
 
 
+
