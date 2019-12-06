@@ -51,9 +51,13 @@ class Solution:
         swap = i = 0
         
         while i < len(arr):
+            
             if arr[i] == i:
+                
                 i += 1
+                
                 continue
+            
             arr[arr[i]], arr[i] = arr[i], arr[arr[i]]
             
             swap += 1

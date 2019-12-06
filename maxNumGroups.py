@@ -30,7 +30,7 @@ def maximumGroups(complianceFactors):
                 if listToCount[j] == complianceFactors[i]:
                     # adds 1 to counter
                     tempTotal += 1
-            # adds the num of groups at the end
+            # adds the num of group
             maxNumOfGroups += tempTotal // 2
 
     return maxNumOfGroups
