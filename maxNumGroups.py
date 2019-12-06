@@ -35,6 +35,6 @@ def maximumGroups(complianceFactors):
 
     return maxNumOfGroups
 
-print(maximumGroups([4,5,2,2,4,4,3,3]))
+print(maximumGroups([4,5,2,2,4,4,3,3]) == 3) # True
 
 
